@@ -1,28 +1,28 @@
 using System;
 using Xunit;
 using Moq;
-using multLib;
+using MultLib;
 
 namespace XUnitTestProject
 {
     public class UnitTest
     {
-        multLibc mul = new multLibc();
+        MultLibc mul = new MultLibc();
 
         [Fact]
-        public void mult_test()
+        public void multTest()
         {
             Assert.Equal(2, mul.Mult(1, 2));
         }
 
         [Fact]
-        public void mult_test2()
+        public void multTest2()
         {
             Assert.Equal(4, mul.Mult(2, 2));
         }
 
         [Fact]
-        public void moq_test()
+        public void moqTest()
         {
             var mock = new Mock<IMultInterface>();
             mock.Setup(p => p.Mult(5,5)).Returns(25);

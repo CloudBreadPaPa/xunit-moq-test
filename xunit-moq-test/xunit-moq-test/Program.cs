@@ -1,13 +1,13 @@
 ﻿using System;
-using multLib;
+using MultLib;
 
-namespace xunit_moq_test
+namespace XunitMoqTest
 {
-    public class Program
+    public static class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
-            multLibc MultFunc = new multLibc();
+            MultLibc MultFunc = new MultLibc();
             Console.WriteLine(MultFunc.Mult(1, 2));
         }
     }

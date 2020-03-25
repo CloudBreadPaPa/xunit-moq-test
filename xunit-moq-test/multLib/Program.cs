@@ -1,13 +1,13 @@
 ﻿using System;
 
-namespace multLib
+namespace MultLib
 {
     public interface IMultInterface
     {
         public int Mult(int first, int second);
     }
 
-    public class multLibc : IMultInterface
+    public class MultLibc : IMultInterface
     {
 
         public int Mult(int a, int b)
